@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 20%;
+    
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.containerHeader {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin: 20px;
+}
+
+.avatar {
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
