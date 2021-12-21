@@ -16,8 +16,16 @@
         function comparaNumeros(num1, num2) {
             const primeiraFrase = criaPrimeiraFrase(num1, num2);
             const segundaFrase = criaSegundaFrase(num1, num2);
-        
-            return `${primeiraFrase} ${segundaFrase}`;
+            const faltaValor = !num1 || !num2;
+            const primeiroNumeroInavlido = Number.isInteger(num1) === true;
+            const segundoNumeroInavlido = Number.isInteger(num2) === true;
+             
+            if(!primeiroNumeroInavlido) return "O primeiro valor não é um número. Digite um numero válido!";
+            if(!segundoNumeroInavlido) return "O segundo valor não é um número. Digite um numero válido!";
+            if(faltaValor) return "Defina dois números!";
+            
+            return `${primeiraFrase} ${segundaFrase}` ;
+           
         }
         
         function criaPrimeiraFrase(num1, num2) {
@@ -35,6 +43,7 @@
             const soma = num1 + num2;
             let comparaDez = 'menor';
             let comparaVinte = 'menor';
+            
         
             if (soma > 10) {
                 comparaDez = 'maior';
@@ -47,4 +56,4 @@
             return `Sua soma é ${soma}, que é ${comparaDez} do que 10 e ${comparaVinte} do que 20.`;
         }
         
-        console.log(comparaNumeros(10, 10));
+        console.log(comparaNumeros(2, 5));
