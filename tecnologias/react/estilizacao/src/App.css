@@ -1,11 +1,12 @@
+
 /*css de classes*/
 .App {
-  display: grid;
-  height: 700px;
-  grid-template-rows: 30% 30% 30%;
-}
-
-.classes {
-  background-color: blue;
-  text-align: center;
-}
+    display: grid;
+    height: 700px;
+    grid-template-rows: 30% 30% 30%;
+  }
+  
+  .classes {
+    background-color: blue;
+    text-align: center;
+  }
